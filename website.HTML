@@ -9,29 +9,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
-    <link rel="icon" type="image/png" href="https://static-00.iconduck.com/assets.00/html5-icon-2018x2048-st7q7lm6.png"> <!-- Shortened for clarity -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://static-00.iconduck.com/assets.00/html5-icon-2018x2048-st7q7lm6.png">
     <title>Website</title>
 </head>
 <body>
-        <!--semantic tags = Keep your content organized
-                        Better for
-                        Assists screen readers and
-                        other tech for accessibility
-        <hader> = introductory content
-        <nav> = navegation bar, links
-        <main> = content area
-        <section> = individual sections of content
-        <aside> = content related to the main content
-        <article> = self-contained content
-        <footer> = footer content
-        
-        -->
+    <!-- Semantic tags for organized content
+         Better for screen readers and accessibility
+         <header> = introductory content
+         <nav> = navigation bar, links
+         <main> = content area
+         <section> = individual sections of content
+         <aside> = related content
+         <article> = self-contained content
+         <footer> = footer content
+    -->
     <header>
+        <button class="btn-social" aria-label="Login" title="Login">Login</button>
         <h1>Header</h1>
         <img src="https://static-00.iconduck.com/assets.00/html5-icon-2018x2048-st7q7lm6.png" alt="HTML Logo" class="html-image">
         <p>This is header content</p>
     </header>
-    <marquee direction="right" behavior="scroll" scrollamount="10"> Simple Website </marquee>
+    <p class="scroll-text">Simple Website</p>
   
     <nav class="navbar">
         <a href="https://youtu.be/Hsu8uqQTSV8?si=HpVLo0nd2vX2IeTW" target="_blank" class="home">Home</a>
@@ -52,6 +51,17 @@
         </article>
     </main>
     <footer>
+        <div class="row">
+            <button class="btn-social" aria-label="Facebook" title="Facebook">
+                <i class="fab fa-facebook"></i><span class="soc-label fb">Facebook</span>
+            </button>            
+            <button class="btn-social" aria-label="Instagram" title="Instagram">
+                <i class="fab fa-instagram"></i><span class="soc-label ig">Instagram</span>
+            </button>
+            <button class="btn-social" aria-label="LinkedIn" title="LinkedIn">
+                <i class="fab fa-linkedin"></i><span class="soc-label in">LinkedIn</span>   
+            </button>
+        </div>
         <p>This is footer content</p>
         <p>Copyright &copy; 2022</p>
         <p>All rights reserved</p>
